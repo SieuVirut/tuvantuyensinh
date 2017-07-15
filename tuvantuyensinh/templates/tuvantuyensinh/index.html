@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Tu van tuyen sinh</title>
-</head>
-<body>
-<h1><p>Tư vấn tuyển sinh 2017 </p></h1>
-{% if latest_question_list %}
+<html lang="">
+	<head>
+	 	<!-- Required meta tags always come first -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				
+			<h1>Cau hoi chung</h1>
+			
+							<div class="jumbotron">
+								<h1 class="display-3">Hello, world!</h1>
+								<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+								<hr class="m-y-md">
+								<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+								<p class="lead">
+									<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+								</p>
+							</div>
+
+
+			</div>
+		</div>
+	<!-- Cau hoi chung nhat -->
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-xl-3">
+					<h3>Menu</h3>
+					<ul class="list-group">
+					  <li class="list-group-item disabled">Cras justo odio</li>
+					  <li class="list-group-item">Dapibus ac facilisis in</li>
+					  <li class="list-group-item">Morbi leo risus</li>
+					  <li class="list-group-item">Porta ac consectetur ac</li>
+					  <li class="list-group-item">Vestibulum at eros</li>
+					</ul>
+				</div>
+				<div class="col-xl-7">
+					<h3>Cau hoi va cau tra loi</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eum molestiae numquam maiores quod, debitis perspiciatis eos adipisci! Quos, et.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eum molestiae numquam maiores quod, debitis perspiciatis eos adipisci! Quos, et.</p>
+
+					{% if latest_question_list %}
     <ul>
        {% for question in latest_question_list %}
        <li>
@@ -22,7 +64,85 @@
 {% else %}
    <p>Chưa có câu hỏi để trả lời</p>
 {% endif %}
+		
 
+				</div>
+				<div class="col-xl-2">
+				<h3>Cau hoi top</h3>	
+					<p>Cau $</p>
+					<p>Cau $</p>
+					<p>Cau $</p>
+					<p>Cau $</p>
+					<p>Cau $</p>
+					<p>Cau $</p>
+					<p>Cau $</p>
+					<p>Cau $</p>
+					<p>Cau $</p>
+					<p>Cau $</p>
+					<p>Cau $</p>
+					<p>Cau $</p>
+					<p>Cau $</p>
 
-</body>
+				</div>
+			</div>
+		</div>	
+	<!-- khung giua trang -->
+	
+		
+		<div class="container">
+			<div class="rows">
+				
+				
+					<hr>
+					<h1>Form thong tin o day</h1>
+					<hr>
+					 <form class="form-inline">
+					  <div class="form-group">
+					    <label for="exampleInputName2">Name</label>
+					    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputEmail2">Email</label>
+					    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+					  </div>
+					 
+					
+					</form>
+					<hr>
+					<form action="">
+					
+						<select class="form-control">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+					</select>
+
+					<hr>
+					<textarea class="form-control" rows="5"></textarea>
+					</form> 
+					<hr>
+					<form action="">
+						
+					<input class="btn btn-default" type="submit" value="Submit">
+					</form> 
+					<hr>
+            	
+            </div>  
+        </div>        
+    <!-- Form dien thong tin -->
+	<div class="container">
+		<div class="text-center">
+			<footer>
+				<p>Nhom tac gia AbAscaks</p>
+ 
+			</footer>
+		</div>
+	</div>
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+	</body>
 </html>
